@@ -1,0 +1,68 @@
+<div class="mediaPage">
+    <div class="wrapper ">
+
+        <div class="tabs_wrap Media container-fluid">
+            <ul>
+                <li (click)="selectTab('Event')" [ngClass]="{ 'active': selectedTab === 'Event' }" data-tabs="Event">
+                    Event
+                </li>
+
+                <li (click)="selectTab('Exhibition')" [ngClass]="{ 'active': selectedTab === 'Exhibition' }"
+                    data-tabs="Exhibition">
+                    Exhibition</li>
+                <li (click)="selectTab('CSR-ACTIVITIES')" [ngClass]="{ 'active': selectedTab === 'CSR-ACTIVITIES' }"
+                    data-tabs="CSR-ACTIVITIES">
+                    CSR ACTIVITIES</li>
+            </ul>
+
+
+
+        </div>
+
+
+    </div>
+    <div class="container">
+
+        <div *ngIf="selectedTab === 'Event'" class="container">
+            <div class="row">
+                <div class="imageText col-lg-6 col-xl-6">
+                    <div class="headding">
+                        <h1>Upcoming
+                            Events</h1>
+
+                    </div>
+                    <div class="belowText">
+                        <h3>Medical Health Checkup</h3>
+                        <p>Park Infinia Site – 4th and 5th October 2018</p>
+                    </div>
+                    <div class="KnowMore">
+                        <span>Know More <button class="btn"><i class="fa-solid fa-arrow-right"></i></button></span>
+
+                    </div>
+
+                </div>
+                <div class="MainImg col-lg-6 col-xl-6">
+                    <img src="assets/media/Rectangle 255 (1).png" alt="">
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 Events">
+                    <h1>Past Events</h1>
+                </div>
+                <div class="col-lg-6 d-flex ViewAll">
+                    <hr>
+
+                    <span>VIEW ALL <button class="btn outline"><i class="fa-solid fa-chevron-right"></i></button></span>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>

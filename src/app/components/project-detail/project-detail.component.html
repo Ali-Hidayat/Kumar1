@@ -1,0 +1,390 @@
+<div class="container-fluid">
+    <div class="row d-flex TopCarousel">
+
+
+        <div class="col-lg-5 carouselText">
+            <div class="imageLogo">
+                <img src="assets/projectDetail/Layer_1.png " alt="">
+
+            </div>
+
+            <h1>
+                Kumar
+                <p>Prospera</p>
+            </h1>
+
+            <span class="bannerText">2 & 3 BHK flats in
+                Magarpatta Pune
+            </span>
+
+
+
+
+
+        </div>
+
+        <div class="carousel col-lg-7 d-flex">
+            <div class="swiper mySwiper">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/header/building.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-1 ">
+
+                <div class="allButons d-flex flex-column">
+                    <div class="enquireNowbtn ">
+                        <button class="btn">Enquire Now <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                    <div class="callIcon">
+                        <button class="btn chatIcon"> <i class="fa fa-phone" style="color:black;"></i> </button>
+                    </div>
+                    <div class="chattBotIcon ">
+                        <button class="btn chatIcon"> <img src="assets/home/chatBotIcon.png" alt=""></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="container littleDetail">
+    <div class="twoBhk col-lg-4">
+        <p>.2 BHK Starting From 97.50 LACS + TAXES</p>
+    </div>
+    <div class="col-lg-4 threeBhk ">
+        <p> 3 BHK Starting From 1.37 CR. + TAXES</p>
+    </div>
+    <div class="container mt-5">
+
+        <div class="row">
+            <div class="col-lg-6 setText">
+                Kumar Prospera Project has 2 &3 BHK flats in Magarpatta, Hadapsar. It is a new Residential construction
+                in
+                Pune. The project is nestled amongst reputed EON & Magarpatta IT Parks, world-class Amanora & Seasons
+                malls.
+                The project offers flats for sale in Hadapsar. Though set in the hub of activities, Kumar Prospera
+                fulfils
+                the much-awaited supply of residential dwellings in the area around Magarpatta, Mundhwa,
+            </div>
+            <div class="col-lg-6 setText ">
+                Keshav Nagar and Kharadi with in-house modern amenities in combination with schools, workplace and malls
+                in
+                the vicinity. Thus providing a high quality of life. The developer Kumar Properties has been the
+                hallmark of
+                trust and excellence for more than five decades, has the impeccable quality record, and known for
+                thoughtful
+                design coupled with rich experience to create a masterpiece in luxury residences.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid mt-5">
+        <div class="wrapper">
+
+            <div class="tabs_wrap">
+                <ul>
+                    <li (click)="selectTab('walkthrough')" [ngClass]="{ 'active': selectedTab === 'walkthrough' }"
+                        data-tabs="walkthrough">Walkthrough</li>
+                    <li (click)="selectTab('flat360')" [ngClass]="{ 'active': selectedTab === 'flat360' }"
+                        data-tabs="flat360">Flat 360</li>
+                    <li (click)="selectTab('live')" [ngClass]="{ 'active': selectedTab === 'live' }" data-tabs="live">
+                        Live</li>
+                </ul>
+
+
+                <div class="container  mt-5">
+                    <div *ngIf="selectedTab === 'walkthrough'" class="content">
+                        <div class="walkthrough">
+                            <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            </iframe>
+                            <p>Kumar Prospera Walkthrough</p>
+                        </div>
+                    </div>
+                    <div *ngIf="selectedTab === 'flat360'" class="content">
+                        <h2>Flat 360 Content</h2>
+                        <p>This is the content for the Flat 360 tab.</p>
+                    </div>
+                    <div *ngIf="selectedTab === 'live'" class="content">
+                        <h2>Live Content</h2>
+                        <p>This is the content for the Live tab.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<div class="container mt-5  ModernTechContainer">
+
+    <div class="d-flex flex-column">
+
+
+        <div class="col-lg-6 DetailContainer ">
+            <p>Modern Technology – Superstructure</p>
+
+            <div class="mt-1 InDetail">
+                Kumar Prospera is amongst the best upcoming projects in Pune using modern technology construction
+                for
+                Superstructure called the Alu-Form system wherein walls and slabs for a typical floor get cast at
+                one
+                time
+                (monolithic construction). The use of aluminium formwork gives better dimensional tolerance
+                eliminating
+                chances
+                of warpage/bulging. Due to this system, external walls have better weather-resistant properties, and
+                issues
+                related to external paint damage and water leakages are practically eliminated. Alu-Form
+                construction
+                also
+                speeds up construction at the site without compromising on the quality.
+            </div>
+
+        </div>
+        <div class="col-lg-6 Address">
+            <ul>
+                <li>
+                    <span>Structural Design Architect:</span> Sunil Mutalik & Associates, Pune
+
+                </li>
+                <li>
+                    <span> Developer:</span> Kumar Agro Products Pvt. Ltd.Landscape
+
+                </li>
+                <li>
+                    <span> Designer:</span> Gregory Kunak, Singapore.Liason
+
+                </li>
+                <li> <span>Architect:</span> Jagdish P. Deshpande, Pune.Site</li>
+
+                <li> <span>Address :</span> Magarpatta road, Hadapsar, Pune 411028</li>
+            </ul>
+
+        </div>
+
+
+    </div>
+    <div class="allImages ">
+        <div class="topImg">
+            <img src="assets/detailProject/top.png" alt="">
+        </div>
+        <div class="mainImg">
+            <img src="assets/detailProject/main.png" alt="">
+        </div>
+
+    </div>
+
+
+</div>
+<div class="container mt-5 ammentiesPositonsContainer">
+    <div class="wrapper">
+
+        <div class="tabs_wrap Ammenties">
+            <ul>
+                <li (click)="selectTab('ammenties')" [ngClass]="{ 'active': selectedTab === 'ammenties' }"
+                    data-tabs="walkthrough">Amenities</li>
+                <li (click)="selectTab('flat360')" [ngClass]="{ 'active': selectedTab === 'flat360' }"
+                    data-tabs="flat360">Specifications</li>
+                <li (click)="selectTab('live')" [ngClass]="{ 'active': selectedTab === 'live' }" data-tabs="live">
+                    Isometric Views</li>
+            </ul>
+
+
+            <div class="containermt-3">
+                <div *ngIf="selectedTab === 'ammenties'" class="content">
+                    <div class="ammentiesAcordian d-flex">
+
+                        <div class="AccordianImgs col-lg-5">
+                            <div class="mainImg">
+                                <img src="assets/detailProject/accordian-main.png" alt="">
+                            </div>
+                            <div class="smallImg">
+                                <img src="assets/detailProject/accordian-center.png" alt="">
+                            </div>
+                        </div>
+                        <div class="container Accordian col-lg-4 col-xl-4">
+                            <div class="faq-main">
+                                <div class="faq-item" *ngFor="let item of faqItems" (click)="toggleFaqItem(item)">
+                                    <div class="faq-label" [ngClass]="{'faq-item-show': item.show}">
+                                        {{ item.label }}
+                                        <i></i>
+
+                                    </div>
+                                    <div class="faq-cont" *ngIf="item.show">
+
+                                        <p *ngFor="let content of item.content">{{ content }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div *ngIf="selectedTab === 'flat360'" class="content">
+                    <h2>Flat 360 Content</h2>
+                    <p>This is the content for the Flat 360 tab.</p>
+                </div>
+                <div *ngIf="selectedTab === 'live'" class="content">
+                    <h2>Live Content</h2>
+                    <p>This is the content for the Live tab.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+<div class="container-fluid GallaryHall">
+    <h1 class="text-center"> Gallary</h1>
+    <div class="GallaryCarousel">
+        <div class="swiper-block">
+
+            <div class="container-fluid">
+                <!-- Swiper -->
+                <div class="swiper-container swiper-container-Gallary">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide GallarySlide">
+                            <img src="/assets/detailProject/main.png" alt="">
+                        </div>
+                        <div class="swiper-slide GallarySlide">
+                            <img src="/assets/detailProject/main.png" alt="">
+                        </div>
+                        <div class="swiper-slide GallarySlide">
+                            <img src="/assets/detailProject/main.png" alt="">
+                        </div>
+                        <div class="swiper-slide GallarySlide">
+                            <img src="/assets/detailProject/main.png" alt="">
+                        </div>
+
+
+                    </div>
+                    <!-- Add Pagination -->
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="container-fluid layout">
+    <h1>Layout</h1>
+    <img src="assets/detailProject/layout.png" alt="">
+
+</div>
+
+
+<div class="GoogleMaps">
+    <h2 class="my-4  text-center fs-1 text-bold">MAP</h2>
+    <div id="container">
+        <div id="map"></div>
+
+        <div id="sidebar-text">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ATMS
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body bg-secondary text-white">
+                            <ul>
+                                <li class="path-mark" data-val="1">
+                                    <p>AXIS BANK</p>
+                                </li>
+                                <li class="path-mark" data-val="2">
+                                    <p>Bank of india ATM</p>
+                                </li>
+                                <li class="path-mark" data-val="3">
+                                    <p>Union Bank ATM</p>
+                                </li>
+                                <li class="path-mark" data-val="4">
+                                    <p>ICICI BANK ATM</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button bg-dark text-white collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            SCHOOLS
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse bg-secondary text-white"
+                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li class="path-mark" data-val="5">
+                                    <p>NM SCHOOL</p>
+                                </li>
+                                <li class="path-mark" data-val="6">
+                                    <p>KINDER GARTEN</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed bg-dark text-white" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            RESORTS
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body bg-secondary text-white">
+                            <ul>
+                                <li class="path-mark" data-val="7">
+                                    <p>Fiesta Resort</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container Documents">
+    <h1>Documents</h1>
+    <table class="w-100">
+        <tr class="d-flex">
+            <td class="col-lg-8 content">Floor Plans ( Towers A1 - A8 )</td>
+            <td class="col-lg-3"> <button class="btn btn-outline open">open</button></td>
+            <td class="col-lg-3"> <button class="download btn btn-outline">download</button></td>
+        </tr>
+
+
+    </table>
+
+</div>

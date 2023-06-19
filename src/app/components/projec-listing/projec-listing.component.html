@@ -1,0 +1,205 @@
+<div class="container mt-5">
+
+    <div class="wrapper">
+
+
+        <div class="container">
+            <div class="tabs_wrap">
+                <ul>
+                    <li (click)="selectTab('consumer')" [ngClass]="{ 'active': selectedTab === 'consumer' }"
+                        data-tabs="consumer">Consumer</li>
+                    <li (click)="selectTab('residential')" [ngClass]="{ 'active': selectedTab === 'residential' }"
+                        data-tabs="residential">Residential</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="item_wrap container">
+        <div *ngIf="selectedTab === 'consumer'" class="consumer-layout">
+            <div class="container consumerData">
+                <div class=" d-flex justify-content-around ">
+                    <div class="cites justify-content-center">
+                        <p>Cities</p>
+                        <div class="dropdown">
+                            <input type="checkbox" class="dropdown__switch" id="filter-switch1" hidden />
+                            <label for="filter-switch1" class="dropdown__options-filter"
+                                (click)="onDocumentClick($event)">
+                                <ul class="dropdown__filter" role="listbox" tabindex="-1">
+                                    <li class="dropdown__filter-selected" aria-selected="true">{{ selectedOption1 }}
+                                    </li>
+                                    <li>
+                                        <ul class="dropdown__select">
+                                            <li class="dropdown__select-option" role="option"
+                                                (click)="onOptionClick1('Option 1')">Option 1</li>
+                                            <li class="dropdown__select-option" role="option"
+                                                (click)="onOptionClick1('Option 2')">Option 2</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="cites">
+                        <p>Location</p>
+                        <div class="dropdown">
+                            <input type="checkbox" class="dropdown__switch" id="filter-switch2" hidden />
+                            <label for="filter-switch2" class="dropdown__options-filter"
+                                (click)="onDocumentClick($event)">
+                                <ul class="dropdown__filter" role="listbox" tabindex="-1">
+                                    <li class="dropdown__filter-selected" aria-selected="true">{{ selectedOption2 }}
+                                    </li>
+                                    <li>
+                                        <ul class="dropdown__select">
+                                            <li class="dropdown__select-option" role="option"
+                                                (click)="onOptionClick2('Option 1')">Option 1</li>
+                                            <li class="dropdown__select-option" role="option"
+                                                (click)="onOptionClick2('Option 2')">Option 2</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="cites">
+                        <p>Apt Types</p>
+                        <div class="dropdown">
+                            <input type="checkbox" class="dropdown__switch" id="filter-switch3" hidden />
+                            <label for="filter-switch3" class="dropdown__options-filter"
+                                (click)="onDocumentClick($event)">
+                                <ul class="dropdown__filter" role="listbox" tabindex="-1">
+                                    <li class="dropdown__filter-selected" aria-selected="true">{{ selectedOption3 }}
+                                    </li>
+                                    <li>
+                                        <ul class="dropdown__select">
+                                            <li class="dropdown__select-option" role="option"
+                                                (click)="onOptionClick3('Option 1')">Option 1</li>
+                                            <li class="dropdown__select-option" role="option"
+                                                (click)="onOptionClick3('Option 2')">Option 2</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="cites">
+                        <p>Size</p>
+                        <div class="dropdown">
+                            <input type="checkbox" class="dropdown__switch" id="filter-switch4" hidden />
+                            <label for="filter-switch4" class="dropdown__options-filter"
+                                (click)="onDocumentClick($event)">
+                                <ul class="dropdown__filter" role="listbox" tabindex="-1">
+                                    <li class="dropdown__filter-selected" aria-selected="true">{{ selectedOption4 }}
+                                    </li>
+                                    <li>
+                                        <ul class="dropdown__select">
+                                            <li class="dropdown__select-option" role="option"
+                                                (click)="onOptionClick4('Option 1')">Option 1</li>
+                                            <li class="dropdown__select-option" role="option"
+                                                (click)="onOptionClick4('Option 2')">Option 2</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="cites">
+                        <p>Status</p>
+                        <div class="dropdown">
+                            <input type="checkbox" class="dropdown__switch" id="filter-switch5" hidden />
+                            <label for="filter-switch5" class="dropdown__options-filter"
+                                (click)="onDocumentClick($event)">
+                                <ul class="dropdown__filter" role="listbox" tabindex="-1">
+                                    <li class="dropdown__filter-selected" aria-selected="true">{{ selectedOption5 }}
+                                    </li>
+                                    <li>
+                                        <ul class="dropdown__select">
+                                            <li class="dropdown__select-option" role="option"
+                                                (click)="onOptionClick5('Option 1')">Option 1</li>
+                                            <li class="dropdown__select-option" role="option"
+                                                (click)="onOptionClick5('Option 2')">Option 2</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="search">
+                        <p>search Icon</p>
+                        <div class="searchIcon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="selectedTab === 'residential'" class="residential-layout">
+            <div class="container consumerData">
+                <h1>here is residential</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container kumarProjects ">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1>Kumar Prospera</h1>
+                <p>2 & 3 BHK flats in Magarpatta PUNE</p>
+            </div>
+            <div class="col-lg-4 explore d-flex">
+                <span>
+                    Explore
+                </span>
+                <button class="btn"> <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="imageSlider">
+        <section>
+            <div class="outer-wrapper">
+                <div class="inner-wrapper">
+                    <div class="pseudo-item" (click)="showImageDetails(1)">
+                        <img src="assets/home/img1-buildings.png" alt="">
+
+                    </div>
+                    <div class="pseudo-item">
+                        <img src="assets/home/img1-buildings.png" alt="">
+                    </div>
+                    <div class="pseudo-item">
+                        <img src="assets/home/img1-buildings.png" alt="">
+                    </div>
+                    <div class="pseudo-item">
+                        <img src="assets/home/img1-buildings.png" alt="">
+                    </div>
+                    <div class="pseudo-item">
+                        <img src="assets/home/img1-buildings.png" alt="">
+                    </div>
+                    <div class="pseudo-item">
+                        <img src="assets/home/img1-buildings.png" alt="">
+                    </div>
+                    <div class="pseudo-item">
+                        <img src="assets/home/img1-buildings.png" alt="">
+                    </div>
+                    <div class="pseudo-item">
+                        <img src="assets/home/img1-buildings.png" alt="">
+                    </div>
+                    <div class="pseudo-item">
+                        <img src="assets/home/img1-buildings.png" alt="">
+                    </div>
+                    <div class="pseudo-item">
+                        <img src="assets/home/img1-buildings.png" alt="">
+                    </div>
+                    <div class="pseudo-item">
+                        <img src="assets/home/img1-buildings.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pseduo-track"></div>
+        </section>
+    </div>
+</div>

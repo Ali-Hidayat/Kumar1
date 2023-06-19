@@ -1,0 +1,194 @@
+.wrapper .tabs_wrap ul li:first-child {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.wrapper .tabs_wrap ul li:last-child {
+    border-right: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.wrapper .tabs_wrap ul li:checked,
+.wrapper .tabs_wrap ul li.active {
+    background: #F27F0C;
+    color: #fff;
+    border-radius: 40px;
+
+
+
+}
+
+.wrapper .container .item_wrap {
+    /* padding: 10px 20px; */
+    border: 1px solid black;
+
+    cursor: pointer;
+    margin: auto;
+    width: 300px;
+    height: 500px;
+    margin: auto;
+}
+
+
+.wrapper {
+    /* width: 100%; */
+    /* height: 500px; */
+    margin-top: 13px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 47px;
+}
+
+.wrapper .title {
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    border-bottom: 1px solid #ebedec;
+}
+
+.wrapper .tabs_wrap {
+    padding: 20px;
+
+
+}
+
+.tabs_wrap ul li {
+    list-style: none;
+
+}
+
+.wrapper .tabs_wrap ul {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    background: white;
+    margin: auto;
+    border-radius: 3rem;
+    padding: 0;
+}
+
+.wrapper .tabs_wrap ul li {
+    width: 244px;
+    text-align: center;
+    background: transparent;
+    padding: 8px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    padding: 17px;
+
+
+}
+
+
+
+
+/* ///////////// Meida section EVENT */
+
+
+.MainImg img {
+    width: 92%;
+    height: 100%;
+}
+
+.headding h1 {
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 6.3vw;
+    line-height: 6vw;
+    text-transform: uppercase;
+    color: #333333;
+    padding-top: 14vh;
+    padding-left: 6vw;
+}
+
+.belowText h3 {
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.9vw;
+    /* line-height: 28px; */
+    display: flex;
+    align-items: center;
+    color: #333333;
+    padding-left: 6vw;
+    padding-top: 2vw;
+}
+
+.belowText p {
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4vw;
+    /* line-height: 28px; */
+    display: flex;
+    align-items: center;
+    color: #333333;
+    padding-left: 6vw;
+}
+
+.KnowMore {
+    padding-left: 6vw
+}
+
+.KnowMore span {
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.3vw;
+    /* line-height: 100px; */
+    display: flex;
+    align-items: center;
+    color: #333333;
+    padding-top: 2vw;
+}
+
+.KnowMore button {
+    border: 2px solid #F27F0C;
+    border-radius: 100px;
+    margin-left: 2vw;
+    height: 54px;
+    width: 54px;
+}
+
+hr {
+    width: 14vw;
+}
+
+.Events h1 {
+    font-family: 'Alido';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5vw;
+    /* line-height: 87px; */
+    color: #F27F0C;
+    padding-top: 5vw;
+    padding-left: 5vw;
+}
+
+.ViewAll {
+    padding-top: 7vw;
+    padding-left: 19vw;
+}
+
+.ViewAll button {
+    border: 1px solid #333333;
+    border-radius: 50px;
+    height: 2.5vw;
+    width: 2.5vw;
+}
+
+.ViewAll span {
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2vw;
+    /* line-height: 32px; */
+    text-align: center;
+    text-transform: capitalize;
+    color: #333333;
+    opacity: 0.7;
+}

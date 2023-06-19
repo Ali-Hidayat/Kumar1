@@ -1,0 +1,81 @@
+<nav class="navbar navbar-expand-md navbar-dark">
+    <div class="container-fluid">
+
+        <div class="nav">
+            <div class="col-lg-6">
+                <div class="menu-btn" (click)="toggleNav()">
+                    <div class="line line--1" [ngClass]="{'line-cross': isNavOpen}"></div>
+                    <div class="line line--2" [ngClass]="{'line-fade-out': isNavOpen}"></div>
+                    <div class="line line--3" [ngClass]="{'line-cross': isNavOpen}"></div>
+                </div>
+
+                <div class="nav-links" [ngClass]="{'fade-in': isNavOpen}">
+                    <a href="" class="link">Home</a>
+                    <a href="" class="link">Contact</a>
+                    <a href="" class="link">Profile</a>
+                    <a href="" class="link">About</a>
+                </div>
+
+                <!-- <img src="assets/header/building.png" alt="Image" class="menu-image"
+                    [ngClass]="{'image-open': isNavOpen}"> -->
+            </div>
+
+        </div>
+
+        <a class="navbar-brand" href="#">
+            <img src="assets/header/kumar-logo.png" alt="">
+        </a>
+
+        <div class="allSocialIcons d-flex">
+            <div class="icon">
+                <i class="fa-brands fa-google-play"></i>
+            </div>
+            <div class="icon">
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="icon">
+                <i class="fa-brands fa-square-instagram"></i>
+            </div>
+            <div class="icon">
+                <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="icon">
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="icon">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+        </div>
+
+
+
+        <div class="navbar-nav1 ">
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about-us">about us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projects">projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/media">media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">testiminols</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
